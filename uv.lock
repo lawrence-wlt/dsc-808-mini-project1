@@ -49,12 +49,14 @@ name = "blank-app-template"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "pandas" },
     { name = "plotly" },
     { name = "streamlit" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "pandas", specifier = ">=3.0.3" },
     { name = "plotly", specifier = ">=5.0.0" },
     { name = "streamlit", specifier = ">=1.60.0" },
 ]
